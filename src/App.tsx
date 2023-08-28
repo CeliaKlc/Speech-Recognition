@@ -13,14 +13,6 @@ function App() {
     setTranscribedText(speechResult);
   };
 
-  recognition.onstart = () => {
-    setIsListening(true);
-  };
-
-  recognition.onend = () => {
-    setIsListening(false);
-  };
-
   const startListening = () => {
     setIsListening(!isListening);
     if (!isListening) {
